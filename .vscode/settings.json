@@ -1,0 +1,11 @@
+{
+	"nuxt.isNuxtApp": false,
+	"cSpell.words": [
+		"iconsets",
+		"materialdesignicons",
+		"Nuxt",
+		"Sitadels",
+		"vuetify"
+	],
+	"vue3snippets.enable-compile-vue-file-on-did-save-code": true
+}
