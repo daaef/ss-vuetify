@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-import {countries, countriesNoStates, tourneys, events} from "~/data";
+import {countries, countriesNoStates, affairs} from "~/data";
 // import { Handler } from "~/services/api.handle";
 // import { useSnFetch } from "~/composables/snFetch";
 
@@ -55,8 +55,7 @@ export const useStore = defineStore({
         ],
         countries: countries,
         countryCodes: countriesNoStates,
-        tourneys: tourneys,
-        events: events,
+        affairs: affairs,
     }),
     actions: {
         /*async callApi(payload) {
@@ -76,13 +75,18 @@ export const useStore = defineStore({
     },
     getters: {
         eventsToday(state){
-            return state.events.filter(event => {
+            return state.affairs.filter(event => {
                 return event.date === "Dec 04, 2023"
             })
         },
+        tourneys(state){
+            return state.affairs.filter(event => {
+                return event?.price
+            })
+        },
         eventsAnticipated(state){
-            return state.events.filter(event => {
-                return event.date !== "Dec 04, 2023"
+            return state.affairs.filter(event => {
+                return event.date !== "Dec 04, 2023" && !event.price
             })
         }
     },

@@ -15,8 +15,14 @@ $title-blue: #28303f;
 	--va-message-list-color: $secondary !important;
 	--color-brand: #3023ae;
 	--color-brand-secondary: #c86dd7;
+	--v-theme-background:250, 250, 250 !important;
+	--bc: 1 0 0 !important;
 }
-
+.v-theme--light {
+	--bc: 1 0 0 !important;
+	--v-theme-background:250, 250, 250 !important;
+	--v-theme-surface: 250, 250, 250 !important;
+}
 .text-acc {
 	color: $accent;
 }
@@ -751,5 +757,20 @@ a.nav-toggle {
 				font-size: .6rem;
 			}
 		}
+	}
+}
+.affair-page {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.bg-white {
+	background: #fafafa !important;
+}
+
+header {
+	&.v-toolbar {
+		background: #fafafa !important;
 	}
 }

@@ -20,6 +20,10 @@ export default defineNuxtConfig({
 					rel: "stylesheet",
 					href: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Rakkas&family=Sarina&display=swap",
 				},
+				{
+					rel: "stylesheet",
+					href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200",
+				},
 				{ rel: "icon", type: "image/x-icon", href: "/favicon.png" },
 			],
 		},
@@ -29,7 +33,6 @@ export default defineNuxtConfig({
 	},
 	css: ["~/assets/styles/style.scss"],
 	modules: [
-		"@nuxtjs/tailwindcss",
 		"@pinia/nuxt",
 		"@vueuse/nuxt",
 		"@vite-pwa/nuxt",
@@ -43,6 +46,7 @@ export default defineNuxtConfig({
 				config.plugins.push(vuetify({ autoImport: true }));
 			});
 		},
+		"@nuxtjs/tailwindcss"
 		//...
 	],
 	carousel: {

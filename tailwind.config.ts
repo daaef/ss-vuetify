@@ -13,9 +13,12 @@ export default {
     `./error.{js,ts,vue}`,
     `./app.config.{js,ts}`
   ],
+  daisyui: {
+    themes: ["light"],
+  },
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 }
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {useStore} from "~/store";
 
-const { tourneys, events, eventsToday, eventsAnticipated } = useStore()
+const { tourneys, eventsToday, eventsAnticipated } = useStore()
 </script>
 
 <template>

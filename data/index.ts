@@ -22281,8 +22281,8 @@ export const countriesNoStates = countries.map(country => {
     return {name: country.name, phone_code: country.phone_code}
 })
 
-export const tourneys = [
-        {
+export const affairs = [
+    {
         id: 1,
         image: "sit-tourney-1.png",
         title: "Sony World Photography Awards 2023",
@@ -22290,74 +22290,80 @@ export const tourneys = [
         price: "$25,000",
         extraPrize: null,
         deadline: "30th Mar, 2023",
+        type: 'tourney'
     },
-        {
-            id: 2,
+    {
+        id: 2,
         image: "sit-tourney-2.png",
         title: "7th Annual Scholarship Essay Competition",
         handle: "NHEF_EC2023",
         price: "N225,000",
         extraPrize: "a New Laptop",
         deadline: "7th Apr, 2023",
+        type: 'tourney'
     },
-        {
-            id: 3,
+    {
+        id: 3,
         image: "sit-tourney-3.png",
         title: "Life In My City Art Festival",
         handle: "Limc_AF2023",
         price: "N1,000,000",
         extraPrize: null,
         deadline: "19th Sep, 2023",
+        type: 'tourney'
     },
-]
-
-export const events = [
-        {
-            id: 4,
+    {
+        id: 4,
         image: "sit-tourney-4.png",
         title: "SEED Business School Festival 2023",
         handle: "Paintdfuture_TYC2023",
         address: "Transcorp Hilton, Abuja",
         date: "Dec 04, 2023",
+        type: 'event'
     },
-        {
-            id: 5,
+    {
+        id: 5,
         image: "sit-tourney-5.png",
         title: "Paintdfuture Teens and Youth Conference 2023",
         handle: "SEED_BSF23",
         address: "Kubwa, Abuja",
         date: "Dec 04, 2023",
+        type: 'event'
     },
-        {
-            id: 6,
+    {
+        id: 6,
         image: "sit-tourney-6.png",
         title: "Art Meets Fashion Abuja",
         handle: "ArtMeetsFashion2023",
         address: "National Gallery of Art, Abuja",
         date: "Dec 04, 2023",
+        type: 'event'
     },
-        {
-            id: 7,
+    {
+        id: 7,
         image: "sit-tourney-7.png",
         title: "Lagos Photo Festival 2023",
         handle: "LagosPhoto23",
         address: "Lagos",
         date: "Oct 25 - Dec 31, 2023",
+        type: 'event'
     },
-        {
-            id: 8,
+    {
+        id: 8,
         image: "sit-tourney-8.png",
         title: "All Africa Music Awards (AFRIMA) 2023",
         handle: "AFRIMA2023",
         address: "Dakar, Senegal",
         date: "Dec 08 - Dec 11, 2023",
+        type: 'event'
     },
-        {
-            id: 9,
+    {
+        id: 9,
         image: "sit-tourney-9.png",
         title: "Abuja Internation Trade Fair",
         handle: "AbjIntTradeFair23",
         address: "Abuja",
         date: "Dec 01 - Dec 04, 2023",
+        type: 'event'
     },
 ]
