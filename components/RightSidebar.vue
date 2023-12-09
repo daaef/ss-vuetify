@@ -62,7 +62,7 @@
             <li>Network with professionals and
               other enthusiasts who share
               your goals and passions.</li>
-            <li>
+            <li class="p-4">
               <a href="#" class="btn-gradient">FREE 30-DAY TRIAL</a>
             </li>
           </ul>

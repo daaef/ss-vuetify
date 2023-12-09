@@ -111,7 +111,10 @@ const { tourneys, events, eventsToday, eventsAnticipated } = useStore()
 }
 .sitadel-suggestions {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>
