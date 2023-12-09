@@ -11,7 +11,7 @@
         </v-card-title>
 
         <v-card-subtitle class="text-sec">
-          <span class="sub-small">EVT</span>{{ handle }}
+          <span class="sub-small">EVT</span>#{{ handle }}
         </v-card-subtitle>
         <p>{{ date }}</p>
         <p>{{ address }}</p>
